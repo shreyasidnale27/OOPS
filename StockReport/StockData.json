@@ -1,0 +1,29 @@
+﻿{
+	"StockData":[
+		{
+			"Name":"Microsoft"
+			"NumberOfShares":40
+			"ShareCost":
+		},
+		{
+			"Name":"Amdocs"
+			"NumberOfShares":20
+			"ShareCost":
+		},
+		{
+			"Name":"Tech Mahindra"
+			"NumberOfShares":30
+			"ShareCost":
+		},
+		{
+			"Name":"Persistance"
+			"NumberOfShares":40
+			"ShareCost":
+		},
+		{
+			"Name":"TCS"
+			"NumberOfShares":30
+			"ShareCost":
+		}
+	]
+}
