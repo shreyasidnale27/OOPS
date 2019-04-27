@@ -26,7 +26,7 @@ namespace Object_Orienetd_Programming
                 Console.WriteLine("PRESS: 2 TO Regular Expression Demonstration");
                 Console.WriteLine("PRESS: 3 TO STOCK OF COMPANY");
                 Console.WriteLine("PRESS: 4 TO INVENTORY MANAGAMENTS");
-                Console.WriteLine("PRESS: 5 TO DECKOFCARD");
+                Console.WriteLine("PRESS: 5 TO DeckOfCards");
                 Console.WriteLine("PRESS 6 TO ADDRESSBOOK");
                 Console.WriteLine("PRESS 7 FOR CARDQUEUE");
                 Console.WriteLine("PRESS 8 FOR COMMERCIAL DATA PROCESSING");
@@ -46,15 +46,15 @@ namespace Object_Orienetd_Programming
                         StockReport.StockFileRead stock = new StockReport.StockFileRead();
                         stock.DisplayStocks();
                         break;
-                    /*case 4:
-                        InventoryManagement inmanage = new InventoryManagement();
-                        inmanage.Management();
+                    case 4:
+                        InventoryManagementProgram.UserView management = new InventoryManagementProgram.UserView();
+                        management.InventoryManagementMethod();
                         break;
                     case 5:
-                        DeckOfCard dc = new DeckOfCard();
-                        dc.DeckCard();
+                        DeckOfCards.DeckOfCards dc = new DeckOfCards.DeckOfCards();
+                        dc.InitializeDeckOfCards();
                         break;
-                    case 6:
+                    /*case 6:
                         AddressBook addbook = new AddressBook();
                         addbook.AddressBookDetails();
                         break;
