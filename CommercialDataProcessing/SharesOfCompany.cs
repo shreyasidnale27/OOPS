@@ -1,14 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="SharesOfCompany.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Oriented_Programming.CommersialDataProcessing
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
+    /// <summary>
+    /// class for create company shares
+    /// </summary>
     public class SharesOfCompany
     {
-                /// <summary>
+         /// <summary>
         /// The number of shares
         /// </summary>
         private long numberOfShares;
@@ -63,8 +71,14 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         /// </value>
         public double PriceOfShare
         {
-            get { return this.costOfShare; }
-            set { this.costOfShare = value; }
+            get
+            {
+                return this.costOfShare;
+            }
+            set
+            {
+                this.costOfShare = value;
+            }
         }
 
         /// <summary>

@@ -1,11 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Node.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Oriented_Programming.CommersialDataProcessing
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
+    /// <summary>
+    /// class for create node
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     class Node<T>
     {
         /// <summary>
@@ -24,15 +33,19 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         Node<T> previous;
 
         /// <summary>
-        /// size for node
+        /// to get position
         /// </summary>
         private long position;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Node{T}"/> class.
+        /// </summary>
         public Node()
         {
             this.next = null;
             this.previous = null;
         }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Node{T}"/> class.
         /// </summary>
@@ -56,7 +69,6 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
             this.position = position;
             this.data = data;
         }
-
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Node{T}"/> class.
@@ -125,8 +137,14 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         /// </value>
         public long Position
         {
-            get { return this.position; }
-            set { this.position = value; }
+            get
+            {
+                return this.position;
+            }
+            set
+            {
+                this.position = value;
+            }
         }
 
     }

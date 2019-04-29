@@ -1,17 +1,21 @@
-﻿namespace Object_Oriented_Programming
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="FirstView.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
+namespace Object_Orienetd_Programming.CommercialDataProcessing
 {
+    using Object_Oriented_Programming.CommersialDataProcessing;
     using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Text;
-    
-
-    class FirstViewCommersial
+    public class FirstView
     {
         /// <summary>
-        /// Starts  the shares.
+        /// Starts  the processing on shares.
         /// </summary>
-        public static void InitialiseShares()
+        public void ShareProcessingStart()
         {
             StockDetails stocdetails = new StockDetails();
             while (true)
@@ -55,15 +59,14 @@
 
                     case 4:
                         {
-                            StockDetails stocdetails = new StockDetails();
-                            stocdetails.PrintSymbols();
+                            StockDetails stockDetails = new StockDetails();
+                            stockDetails.PrintSymbols();
                             break;
                         }
 
                     default:
                         {
-                            Console.WriteLine("Invalid Input");
-                            break;
+                            return;
                         }
                 }
             }

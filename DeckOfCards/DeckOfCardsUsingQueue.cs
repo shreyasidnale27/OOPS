@@ -1,11 +1,19 @@
-﻿
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="DeckOfCardsUsingQueue.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Orienetd_Programming.DeckOfCards
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
 
-   public class DeckOfCardsUsingQueue
+    /// <summary>
+    /// class for DeckOfCards using queue
+    /// </summary>
+    public class DeckOfCardsUsingQueue
     {
         public List<int> Playerlist1 =new List<int>();
         public LinkedListQueue<int> list = new LinkedListQueue<int>();

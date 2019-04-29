@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="QueueCommercial.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Oriented_Programming.CommersialDataProcessing
 {
-    class QueueCommercial
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
+    /// <summary>
+    /// class for create Queue
+    /// </summary>
+    public class QueueCommercial
     {
         /// <summary>
         /// The queue maximum size
@@ -41,8 +49,14 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         /// </value>
         public int QueueMaxSize
         {
-            get { return this.queueMaxSize; }
-            set { this.queueMaxSize = value; }
+            get
+            {
+                return this.queueMaxSize;
+            }
+            set
+            {
+                this.queueMaxSize = value;
+            }
         }
 
         /// <summary>
@@ -53,8 +67,14 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         /// </value>
         public int Front
         {
-            get { return this.front; }
-            set { this.front = value; }
+            get
+            {
+                return this.front;
+            }
+            set
+            {
+                this.front = value;
+            }
         }
 
         /// <summary>
@@ -65,9 +85,15 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         /// </value>
         public int Rear
         {
-            get { return this.rear; }
+            get
+            {
+                return this.rear;
+            }
 
-            set { this.rear = value; }
+            set
+            {
+                this.rear = value;
+            }
         }
 
         /// <summary>
@@ -78,8 +104,14 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         /// </value>
         public int Size
         {
-            get { return this.size; }
-            set { this.size = value; }
+            get
+            {
+                return this.size;
+            }
+            set
+            {
+                this.size = value;
+            }
         }
 
         /// <summary>

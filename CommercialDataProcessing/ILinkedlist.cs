@@ -1,11 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="ILinkedlist.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Oriented_Programming.CommersialDataProcessing
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
     public interface ILinkedlist<T>
     {
         /// <summary>
@@ -13,7 +18,7 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         /// </summary>
         /// <param name="word">The word.</param>
         /// <returns>returns true or false</returns>
-        bool Add(T word);
+        void AddNodeAtLast(T word);
 
         /// <summary>
         /// Determines whether this instance is empty.
@@ -34,7 +39,7 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         /// </summary>
         /// <param name="wordToSearch">The word to search.</param>
         /// <returns>returns true or false</returns>
-        bool Delete(string wordToSearch);
+        void DeleteAtPosition(T wordToSearch);
 
         /// <summary>
         /// Inserts the specified data.

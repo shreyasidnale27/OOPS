@@ -13,7 +13,7 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
     /// <summary>
     /// class Utility
     /// </summary>
-    class Utility
+    public class Utility
     {
         /// <summary>
         /// returns true if string contain any special Character

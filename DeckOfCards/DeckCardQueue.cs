@@ -1,10 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="DeckCardQueue.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Orienetd_Programming.DeckOfCards
 {
-   public class DeckCardQueue<T>
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// class for perform Queue operation with cards
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class DeckCardQueue<T>
     {
         /// <summary>
         /// The list is an integer instance of the Linked List

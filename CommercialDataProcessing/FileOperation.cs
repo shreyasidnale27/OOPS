@@ -1,14 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using Newtonsoft.Json;
-
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="FileOperation.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Oriented_Programming.CommersialDataProcessing
 {
-    class FileOperation
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Linq;
+    using System.Text;
+    using Newtonsoft.Json;
+
+    /// <summary>
+    /// class for read file and write to file
+    /// </summary>
+    public class FileOperation
     {
         /// <summary>
         /// Reads from file.
@@ -17,9 +25,9 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         public static List<SharesOfCompany> ReadFromFile()
         {
             CommercialLinkedlist<SharesOfCompany> sharesLinkedList = new CommercialLinkedlist<SharesOfCompany>();
-            if (File.Exists("C:\\Users\\Bridge labz\\Desktop\\Commersial\\CompanyShares.json"))
+            if (File.Exists(@"C:\Users\admin\source\repos\Object Orienetd Programming\Object Orienetd Programming\CommercialDataProcessing\SharesOfCompany.json"))
             {
-                string jsonData = File.ReadAllText("C:\\Users\\Bridge labz\\Desktop\\Commersial\\CompanyShares.json");
+                string jsonData = File.ReadAllText(@"C:\Users\admin\source\repos\Object Orienetd Programming\Object Orienetd Programming\CommercialDataProcessing\SharesOfCompany.json");
 
                 ////Getting List<CompanyShares> object from JsonFile.
                 List<SharesOfCompany> jsonObjectArray = JsonConvert.DeserializeObject<List<SharesOfCompany>>(jsonData);
@@ -27,7 +35,7 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
                 ////Adding All the CompanyShares Object to CustomLinkedLsit.
                 foreach (SharesOfCompany cs in jsonObjectArray)
                 {
-                    sharesLinkedList.Add(cs);
+                    sharesLinkedList.AddNodeAtLast(cs);
                 }
 
                 return jsonObjectArray;
@@ -48,7 +56,7 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
             //// Converting Object to JSon String.
             string jsonData = JsonConvert.SerializeObject(companySharesList);
 
-            System.IO.File.WriteAllText("C:\\Users\\Bridge labz\\Desktop\\Commersial\\CompanyShares.json", jsonData);
+            System.IO.File.WriteAllText(@"C:\Users\admin\source\repos\Object Orienetd Programming\Object Orienetd Programming\CommercialDataProcessing\SharesOfCompany.json", jsonData);
         }
 
         /// <summary>
@@ -86,7 +94,7 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
 
             string jsonData = JsonConvert.SerializeObject(symbolList);
 
-            System.IO.File.WriteAllText("C:\\Users\\Bridge labz\\Desktop\\Commersial\\SymbolPurchased.json", jsonData);
+            System.IO.File.WriteAllText(@"C:\Users\admin\source\repos\Object Orienetd Programming\Object Orienetd Programming\CommercialDataProcessing\SymbolPurchased.txt", jsonData);
         }
     }
 }

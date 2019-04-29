@@ -1,10 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="DeckOfCards.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Orienetd_Programming.DeckOfCards
 {
-    class DeckOfCards
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// class for DeckOfCards and for play cards
+    /// </summary>
+    public class DeckOfCards
     {
         /// <summary>
         /// The deck of cards

@@ -12,7 +12,7 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
     /// <summary>
     /// class Inventory Manager
     /// </summary>
-    class InventoryManager
+    public class InventoryManager
     {
         /// <summary>
         /// Gets the inventory list.

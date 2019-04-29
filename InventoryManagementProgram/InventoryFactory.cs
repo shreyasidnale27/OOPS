@@ -13,7 +13,7 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
     /// <summary>
     /// Inventory Factory Class For Read File
     /// </summary>
-    class InventoryFactory
+    public class InventoryFactory
     {
         internal static AllFilePaths path = new AllFilePaths();
 

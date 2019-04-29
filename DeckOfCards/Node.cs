@@ -1,9 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Node.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Orienetd_Programming.DeckOfCards
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// class for create node
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class Node<T>
     {
         /// <summary>

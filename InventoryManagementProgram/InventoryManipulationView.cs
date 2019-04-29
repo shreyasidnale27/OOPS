@@ -13,7 +13,7 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
     /// <summary>
     /// class InventoryManipulationView
     /// </summary>
-    class InventoryManipulationView
+    public class InventoryManipulationView
     {
         /// <summary>
         /// Inventories the manipulation view.

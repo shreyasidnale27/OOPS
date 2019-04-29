@@ -1,17 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="StockDetails.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Oriented_Programming.CommersialDataProcessing
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
+    /// <summary>
+    /// class for stock details
+    /// </summary>
+    /// <seealso cref="Object_Oriented_Programming.CommersialDataProcessing.IStockDetails" />
     public class StockDetails: IStockDetails
     {
         /// <summary>
         /// The company shares list
         /// </summary>
-        private SinglyLinkedList<CompanyShares> companySharesList = new SinglyLinkedList<CompanyShares>();
+        private CommercialLinkedlist<SharesOfCompany> companySharesList = new CommercialLinkedlist<SharesOfCompany>();
 
         /// <summary>
         /// Buys the specified number of shares.
@@ -121,8 +130,18 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
 
             while (!symbolStack.IsEmpty())
             {
-                Console.Write(symbolStack.Pop() + " ");
+                Console.Write(symbolStack.PopFromStack() + " ");
             }
+        }
+
+        public double ValueOfStock()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IStockDetails.StockDetails(string fileName)
+        {
+            throw new NotImplementedException();
         }
     }
 }

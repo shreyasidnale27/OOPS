@@ -1,9 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="LinkedListQueue.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Orienetd_Programming.DeckOfCards
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// class for Queue using linked list
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class LinkedListQueue<T>
     {
         public List<T> list1 = new List<T>();
@@ -16,6 +26,10 @@ namespace Object_Orienetd_Programming.DeckOfCards
         /// The node count for counting numbers of node
         /// </summary>
         private int nodeCount;
+
+        /// <summary>
+        /// The value
+        /// </summary>
         T val;
 
         /// <summary>
@@ -101,6 +115,13 @@ namespace Object_Orienetd_Programming.DeckOfCards
             }
         }
 
+        /// <summary>
+        /// Adds the node at last1.
+        /// </summary>
+        /// <param name="list">The list.</param>
+        /// <param name="data">The data.</param>
+        /// <param name="list1">The list1.</param>
+        /// <returns>returns list after adding element in list</returns>
         public LinkedListQueue<T> AddNodeAtLast1(List<T> list, T data, LinkedListQueue<T> list1)
         {
             try
@@ -156,6 +177,14 @@ namespace Object_Orienetd_Programming.DeckOfCards
             }
             return list;
         }
+
+        /// <summary>
+        /// Adds the node at first1.
+        /// </summary>
+        /// <param name="list">The list.</param>
+        /// <param name="data">The data.</param>
+        /// <param name="list1">The list1.</param>
+        /// <returns>list after adding element</returns>
         public LinkedListQueue<T> AddNodeAtFirst1(List<T> list, T data, LinkedListQueue<T> list1)
         {
             try
@@ -180,6 +209,11 @@ namespace Object_Orienetd_Programming.DeckOfCards
             return list1;
         }
 
+        /// <summary>
+        /// Adds the player in list.
+        /// </summary>
+        /// <param name="list">The list.</param>
+        /// <returns>list after adding players in that</returns>
         public List<T> AddPlayerInList(LinkedListQueue<T> list)
         {
             try
@@ -197,6 +231,7 @@ namespace Object_Orienetd_Programming.DeckOfCards
             }
             return list1;
         }
+
         /// <summary>
         /// Pushes the specified data at first position.
         /// </summary>

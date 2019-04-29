@@ -1,11 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="StackCommercial.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Oriented_Programming.CommersialDataProcessing
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
+    /// <summary>
+    /// class for create class
+    /// </summary>
     public class StackCommercial
     {
          /// <summary>
@@ -58,19 +66,19 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         }
 
         /// <summary>
-        /// Pop elements from stack.
+        /// Pops this instance.
         /// </summary>
-        /// <returns>true if pop element from stack</returns>
-        public bool PopFromStack()
+        /// <returns> returns the top element from the stack</returns>
+        public string PopFromStack()
         {
-            if (this.IsEmpty())
+            try
             {
-                return false;
+                ////decreasing top value after pushing each element
+                return this.myList[top--];
             }
-            else
+            catch (Exception ex)
             {
-                top--;
-                return true;
+                throw new Exception(ex.Message);
             }
         }
 

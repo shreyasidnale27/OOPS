@@ -13,7 +13,7 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
     /// <summary>
     /// class for user to view inventory 
     /// </summary>
-    class InventoryMenuView
+    public class InventoryMenuView
     {
         /// <summary>
         /// Inventories the menu view.

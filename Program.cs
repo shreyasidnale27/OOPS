@@ -24,12 +24,12 @@ namespace Object_Orienetd_Programming
             {
                 Console.WriteLine("PRESS: 1 TO Inventory Data Management For Grocery");
                 Console.WriteLine("PRESS: 2 TO Regular Expression Demonstration");
-                Console.WriteLine("PRESS: 3 TO STOCK OF COMPANY");
-                Console.WriteLine("PRESS: 4 TO INVENTORY MANAGAMENTS");
+                Console.WriteLine("PRESS: 3 TO Stock OF Company");
+                Console.WriteLine("PRESS: 4 TO Inventory Managments");
                 Console.WriteLine("PRESS: 5 TO DeckOfCards");
-                Console.WriteLine("PRESS 6 TO ADDRESSBOOK");
+                Console.WriteLine("PRESS 6 TO Address Book");
                 Console.WriteLine("PRESS 7 For DeckOfCards Using Queue");
-                Console.WriteLine("PRESS 8 FOR COMMERCIAL DATA PROCESSING");
+                Console.WriteLine("PRESS 8 FOR Commercial Data Processing");
 
                 int ch = Convert.ToInt32(Console.ReadLine());
                 switch (ch)
@@ -39,7 +39,7 @@ namespace Object_Orienetd_Programming
                         details.DisplayAllData();
                         break;
                     case 2:
-                       RegularExapressionDemo.RegularExpression rx = new RegularExapressionDemo.RegularExpression();
+                        RegularExapressionDemo.RegularExpression rx = new RegularExapressionDemo.RegularExpression();
                         rx.ReadData();
                         break;
                     case 3:
@@ -62,14 +62,15 @@ namespace Object_Orienetd_Programming
                         DeckOfCards.DeckOfCards DeckCardsQueue = new DeckOfCards.DeckOfCards();
                         DeckCardsQueue.InitializeDeckOfCards();
                         break;
-
-
+                    case 8:
+                        CommercialDataProcessing.FirstView data = new CommercialDataProcessing.FirstView();
+                        data.ShareProcessingStart();
+                        break;
                 }
                 Console.WriteLine("enter 'Y' or 'y' if you want to continue:");
                 condition = Convert.ToChar(Console.ReadLine());
             } while (condition == 'y' || condition == 'Y');
-         
+
         }
     }
 }
-

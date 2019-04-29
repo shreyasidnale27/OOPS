@@ -1,14 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="CommercialLinkedlist.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shreya Sidnale"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Object_Oriented_Programming.CommersialDataProcessing
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
+    /// <summary>
+    /// class for add and remove from linkedlist
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <seealso cref="Object_Oriented_Programming.CommersialDataProcessing.ILinkedlist{T}" />
     class CommercialLinkedlist<T>:ILinkedlist<T>
     {
-                /// <summary>
+        /// <summary>
         /// The head holds the Adress of 1st node
         /// </summary>
         private Node<T> head;
@@ -17,6 +27,10 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         /// The node count for counting numbers of node
         /// </summary>
         private int nodeCount;
+
+        /// <summary>
+        /// The value
+        /// </summary>
         T val;
 
         /// <summary>
@@ -107,6 +121,13 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
             }
         }
 
+        /// <summary>
+        /// Adds the node at last1.
+        /// </summary>
+        /// <param name="list">The list.</param>
+        /// <param name="data">The data.</param>
+        /// <param name="list1">The list1.</param>
+        /// <returns>list after adding element</returns>
         public CommercialLinkedlist<T> AddNodeAtLast1(List<T> list, T data, CommercialLinkedlist<T> list1)
         {
             try
@@ -162,6 +183,14 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
             }
             return true;
         }
+
+        /// <summary>
+        /// Adds the node at first1.
+        /// </summary>
+        /// <param name="list">The list.</param>
+        /// <param name="data">The data.</param>
+        /// <param name="list1">The list1.</param>
+        /// <returns>list after adding node</returns>
         public CommercialLinkedlist<T> AddNodeAtFirst1(List<T> list, T data, CommercialLinkedlist<T> list1)
         {
             try
@@ -186,16 +215,6 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
             return list1;
         }
 
-
-       /* /// <summary>
-        /// Pushes the specified data at first position.
-        /// </summary>
-        /// <param name="data">The data.</param>
-        public void Push(CommercialLinkedlist<T> list, T data)
-        {
-            this.AddNodeAtFirst(list,data);
-        }*/
-
         /// <summary>
         /// Pops this instance at first position from linked list.
         /// </summary>
@@ -203,6 +222,15 @@ namespace Object_Oriented_Programming.CommersialDataProcessing
         public bool Pop()
         {
             return this.DeleteFirst();
+        }
+
+        /// <summary>
+        /// Sizes this instance.
+        /// </summary>
+        /// <returns> returns size</returns>
+        public long Size()
+        {
+            return this.size;
         }
 
         /// <summary>
