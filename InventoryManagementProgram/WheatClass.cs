@@ -13,7 +13,7 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
     /// <summary>
     /// class for Wheat
     /// </summary>
-    class WheatClass
+    public class WheatClass
     {
         /// <summary>
         /// The name/

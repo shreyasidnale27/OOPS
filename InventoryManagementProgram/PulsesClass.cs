@@ -13,7 +13,7 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
     /// <summary>
     /// class for pulses 
     /// </summary>
-    class PulsesClass
+    public class PulsesClass
     {
         /// <summary>
         /// The name

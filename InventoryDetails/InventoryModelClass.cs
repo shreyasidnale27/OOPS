@@ -74,11 +74,11 @@ namespace Object_Orienetd_Programming.InventoryDetails
         {
             get
             {
-                return this.Priceperkg;
+                return this.priceperkg;
             }
             set
             {
-                this.Priceperkg = value;
+                this.priceperkg = value;
             }
         }
     }

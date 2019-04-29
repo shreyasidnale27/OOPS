@@ -14,6 +14,7 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
     /// </summary>
     class WriteToFile
     {
+        internal static AllFilePaths path = new AllFilePaths();
         /// <summary>
         /// Writes to file.
         /// </summary>
@@ -23,7 +24,7 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
             ////Converting InventoryTypes Object to Json String
             string jsonAdddressBook = JsonConvert.SerializeObject(inventoryTypes);
             ////Wrinting Json String to file.
-            System.IO.File.WriteAllText("C:\\Users\\Bridge labz\\Desktop\\Inventory - Copy.json", jsonAdddressBook);
+            System.IO.File.WriteAllText(path.InventoryManagement, jsonAdddressBook);
         }
     }
 }

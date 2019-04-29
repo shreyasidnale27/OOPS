@@ -28,7 +28,7 @@ namespace Object_Orienetd_Programming
                 Console.WriteLine("PRESS: 4 TO INVENTORY MANAGAMENTS");
                 Console.WriteLine("PRESS: 5 TO DeckOfCards");
                 Console.WriteLine("PRESS 6 TO ADDRESSBOOK");
-                Console.WriteLine("PRESS 7 FOR CARDQUEUE");
+                Console.WriteLine("PRESS 7 For DeckOfCards Using Queue");
                 Console.WriteLine("PRESS 8 FOR COMMERCIAL DATA PROCESSING");
 
                 int ch = Convert.ToInt32(Console.ReadLine());
@@ -54,14 +54,14 @@ namespace Object_Orienetd_Programming
                         DeckOfCards.DeckOfCards dc = new DeckOfCards.DeckOfCards();
                         dc.InitializeDeckOfCards();
                         break;
-                    /*case 6:
-                        AddressBook addbook = new AddressBook();
-                        addbook.AddressBookDetails();
+                    case 6:
+                        AdressBook.AddressBookMethodCall addbook = new AdressBook.AddressBookMethodCall();
+                        addbook.AddressBookstart();
                         break;
                     case 7:
-                        CardQueue cq = new CardQueue();
-                        cq.CardInQueue();
-                        break;*/
+                        DeckOfCards.DeckOfCards DeckCardsQueue = new DeckOfCards.DeckOfCards();
+                        DeckCardsQueue.InitializeDeckOfCards();
+                        break;
 
 
                 }

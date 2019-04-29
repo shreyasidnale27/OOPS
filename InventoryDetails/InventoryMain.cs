@@ -25,9 +25,9 @@ namespace Object_Orienetd_Programming.InventoryDetails
             try
             {
                 //// Reads the file from which is json format
-                InventoryMain detailsOfInventory = new InventoryMain();
+                
                 AllFilePaths paths = new AllFilePaths();
-                List<InventoryModelClass> items = detailsOfInventory.ReadFile(paths.InventoryItems);
+                List<InventoryModelClass> items = InventoryMain.ReadFile(paths.InventoryItems);
                 Console.WriteLine("Name\tweight\tRate\tAmount");
 
                 //// for loop to iterate a data from json file
@@ -47,7 +47,7 @@ namespace Object_Orienetd_Programming.InventoryDetails
         /// </summary>
         /// <param name="fileName">Name of the file.</param>
         /// <returns>returns items in inventory</returns>
-        public List<InventoryModelClass> ReadFile(string fileName)
+        public static List<InventoryModelClass> ReadFile(string fileName)
         {
             ////StreamReader is  used to read from the file
             using (StreamReader read = new StreamReader(fileName))

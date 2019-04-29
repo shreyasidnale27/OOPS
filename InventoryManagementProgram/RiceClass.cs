@@ -13,7 +13,7 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
     /// <summary>
     /// class for rice
     /// </summary>
-    class RiceClass
+   public class RiceClass
     {
         /// <summary>
         /// The name

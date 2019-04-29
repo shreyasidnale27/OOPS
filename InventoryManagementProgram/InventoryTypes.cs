@@ -13,7 +13,7 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
     /// <summary>
     /// class For Inventory types 
     /// </summary>
-    class InventoryTypes
+    public class InventoryTypes
     {
         /// <summary>
         /// The rice list

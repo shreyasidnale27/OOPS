@@ -20,5 +20,6 @@ namespace Object_Orienetd_Programming
         /// </summary>
         public readonly string InventoryItems = @"C:\Users\admin\source\repos\Object Orienetd Programming\Object Orienetd Programming\InventoryDetails\GroceryInventory.json";
         public readonly string StockData = @"C:\Users\admin\source\repos\Object Orienetd Programming\Object Orienetd Programming\StockReport\StockData.json";
+        public readonly string InventoryManagement = @"C:\Users\admin\source\repos\Object Orienetd Programming\Object Orienetd Programming\InventoryManagementProgram\InventoryData.json";
     }
 }

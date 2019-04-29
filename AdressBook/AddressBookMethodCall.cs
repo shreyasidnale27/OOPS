@@ -13,12 +13,12 @@ namespace Object_Orienetd_Programming.AdressBook
     /// <summary>
     /// class for choice for options 
     /// </summary>
-    class AddressBookMethodCall
+    public class AddressBookMethodCall
     {
         /// <summary>
         /// Initialize the address book.
         /// </summary>
-        public static void AddressBookstart()
+        public void AddressBookstart()
         {
             int option = 0;
 

@@ -26,17 +26,17 @@ namespace Object_Orienetd_Programming.AdressBook
             string jsonAdddressBook = JsonConvert.SerializeObject(addressBook);
 
             //// checking the File path exist or not.
-            if (File.Exists("C:\\Users\\Bridge labz\\Desktop\\AddressBook\\" + addressBook.AddressBookName + ".json"))
+            if (File.Exists(@"C:\Users\admin\source\repos\Object Orienetd Programming\Object Orienetd Programming\AdressBook\" + addressBook.AddressBookName + ".json"))
             {
                 Console.WriteLine("AddressBook with name : " + addressBook.AddressBookName + " already exist");
                 return;
             }
 
-            using (StreamWriter sw = new StreamWriter("C:\\Users\\Bridge labz\\Desktop\\AddressBook\\" + addressBook.AddressBookName + ".json"))
+            using (StreamWriter sw = new StreamWriter(@"C:\Users\admin\source\repos\Object Orienetd Programming\Object Orienetd Programming\AdressBook\" + addressBook.AddressBookName + ".json"))
             {
                 sw.Close();
                 ////Writing to File.
-                System.IO.File.WriteAllText("C:\\Users\\Bridge labz\\Desktop\\AddressBook\\" + addressBook.AddressBookName + ".json", jsonAdddressBook);
+                System.IO.File.WriteAllText(@"C:\Users\admin\source\repos\Object Orienetd Programming\Object Orienetd Programming\AdressBook\" + addressBook.AddressBookName + ".json", jsonAdddressBook);
 
                 Console.WriteLine("Address Book with name " + addressBook.AddressBookName + " created");
             }
@@ -48,7 +48,7 @@ namespace Object_Orienetd_Programming.AdressBook
         /// <returns>returns AddressBook List</returns>
         public static List<string> GetAddressBookList()
         {
-            DirectoryInfo directoryInfo = new DirectoryInfo("C:\\Users\\Bridge labz\\Desktop\\AddressBook");
+            DirectoryInfo directoryInfo = new DirectoryInfo(@"C:\Users\admin\source\repos\Object Orienetd Programming\Object Orienetd Programming\AdressBook\");
 
             ////Getting All the filesName in list.
             FileInfo[] files = directoryInfo.GetFiles("*.json"); ////Getting json files

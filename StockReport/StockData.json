@@ -1,29 +1,27 @@
-﻿{
-	"StockData":[
-		{
-			"Name":"Microsoft"
-			"NumberOfShares":40
-			"ShareCost":
-		},
-		{
-			"Name":"Amdocs"
-			"NumberOfShares":20
-			"ShareCost":
-		},
-		{
-			"Name":"Tech Mahindra"
-			"NumberOfShares":30
-			"ShareCost":
-		},
-		{
-			"Name":"Persistance"
-			"NumberOfShares":40
-			"ShareCost":
-		},
-		{
-			"Name":"TCS"
-			"NumberOfShares":30
-			"ShareCost":
-		}
-	]
-}
+﻿[
+	{
+	"StockName": "Microsoft",
+	"NumberOfShares": 40,
+	"ShareCost": 45789.00 
+	},
+	{
+	"StockName":"Amdocs",
+	"NumberOfShares": 20,
+	"ShareCost": 32588.00
+	},
+	{
+	"StockName":"Tech Mahindra",
+	"NumberOfShares": 30,
+	"ShareCost": 78451.00
+	},
+	{
+	"StockName":"Persistance",
+	"NumberOfShares": 40,
+	"ShareCost": 85440.00
+	},
+	{
+	"StockName":"TCS",
+	"NumberOfShares": 30,
+	"ShareCost": 78451.00
+	}
+] 

@@ -15,6 +15,8 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
     /// </summary>
     class InventoryFactory
     {
+        internal static AllFilePaths path = new AllFilePaths();
+
         /// <summary>
         /// Reads the json file.
         /// </summary>
@@ -22,9 +24,9 @@ namespace Object_Orienetd_Programming.InventoryManagementProgram
         public static InventoryTypes ReadJsonFile()
         {
             ////checks Wheather File Exist or Not.
-            if (File.Exists("C:\\Users\\Bridge labz\\Desktop\\Inventory - Copy.json"))
+            if (File.Exists(path.InventoryManagement))
             {
-                string jsonData = File.ReadAllText("C:\\Users\\Bridge labz\\Desktop\\Inventory - Copy.json");
+                string jsonData = File.ReadAllText(path.InventoryManagement);
 
                 ////Getting the inventoryTypes Object from the  JSon String.
                 InventoryTypes jsonObjectArray = JsonConvert.DeserializeObject<InventoryTypes>(jsonData);
